@@ -2,7 +2,7 @@
     <img src="docs/assets/logo-large.png" width="120">
 </p>
 
-# [React Portfolio](https://ryanbalieiro.github.io/react-portfolio-template/) by Stefan Peoples
+# [React Portfolio](https://speoples-star.github.io/) by Stefan Peoples
 
 A sleek, futuristic portfolio template for developers – built with **React** and **Bootstrap 5**.
 
@@ -23,7 +23,7 @@ Here's a list of live versions of the template:
 
 | #     | Version             | Description                                             | URL                                                                     |
 |-------|---------------------|---------------------------------------------------------|-------------------------------------------------------------------------|
-| 🟢    | Stefan Peoples (default) | Latest deployment of the template here on GitHub pages. | [Preview](https://ryanbalieiro.github.io/react-portfolio-template/)     |
+| 🟢    | Stefan Peoples (default) | Latest deployment of the portfolio here on GitHub pages. | [Preview](https://speoples-star.github.io/)     |
 | 🟣    | Emily Park          | An example of how the template can be customized.       | [Preview](https://ryansandbox.github.io/emily-park-react-portfolio/)    |
 | 🔵    | Michael Özkan       | Another example of how the template can be customized.  | [Preview](https://ryansandbox.github.io/michael-ozkan-react-portfolio/) |
 

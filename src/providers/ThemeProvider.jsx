@@ -22,6 +22,50 @@ function ThemeProvider({ children, supportedThemes, defaultThemeId, showSpinnerO
 
     const [spinnerActivities, setSpinnerActivities] = useState([])
     const [selectedThemeId, setSelectedThemeId] = useState(null)
+    const [themePreferenceSource, setThemePreferenceSource] = useState(null)
+
+    const getThemeById = (themeId) => {
+        if(!themeId)
+            return null
+
+        return allThemes.find(theme => theme.id === themeId) || null
+    }
+
+    const getSystemTheme = () => {
+        if(typeof window === "undefined" || typeof window.matchMedia !== "function")
+            return null
+
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)")?.matches
+        const systemThemeId = prefersDark ? "dark" : "light"
+        return getThemeById(systemThemeId)
+    }
+
+    const applyTheme = (theme, persist = true, source = persist ? "saved" : "system") => {
+        if(!theme)
+            return
+
+        const shouldAnimate = persist && showSpinnerOnThemeChange && selectedThemeId && selectedThemeId !== theme.id
+
+        const _apply = () => {
+            document.documentElement.setAttribute('data-theme', theme.id)
+            onThemeChanged(theme.id)
+        }
+
+        setSelectedThemeId(theme.id)
+        setThemePreferenceSource(source)
+
+        if(persist)
+            utils.storage.setPreferredTheme(theme.id)
+
+        if(!shouldAnimate) {
+            _apply()
+            return
+        }
+
+        setSpinnerActivities([{id: "theme-change"}])
+        setTimeout(() => { _apply() }, 30)
+        setTimeout(() => { setSpinnerActivities([]) }, 300)
+    }
 
     /** @constructs **/
     useEffect(() => {
@@ -31,30 +75,57 @@ function ThemeProvider({ children, supportedThemes, defaultThemeId, showSpinnerO
         }
 
         const savedThemeId = utils.storage.getPreferredTheme()
-        const savedTheme = allThemes.find(theme => theme.id === savedThemeId)
-        setSelectedTheme(savedTheme || defaultTheme)
-    }, [])
-
-    const getSelectedTheme = () => {
-        return allThemes.find(theme => theme.id === selectedThemeId)
-    }
-
-    const setSelectedTheme = (theme) => {
-        const _apply = () => {
-            document.documentElement.setAttribute('data-theme', theme.id)
-            onThemeChanged(theme.id)
-        }
-
-        setSelectedThemeId(theme.id)
-        utils.storage.setPreferredTheme(theme.id)
-        if(!showSpinnerOnThemeChange || !selectedThemeId) {
-            _apply()
+        const savedTheme = getThemeById(savedThemeId)
+        if(savedTheme) {
+            applyTheme(savedTheme, true, "saved")
             return
         }
 
-        setSpinnerActivities([{id: "theme-change"}])
-        setTimeout(() => { _apply() }, 30)
-        setTimeout(() => { setSpinnerActivities([]) }, 300)
+        const systemTheme = getSystemTheme()
+        if(systemTheme) {
+            applyTheme(systemTheme, false, "system")
+            return
+        }
+
+        applyTheme(defaultTheme, false, "default")
+    }, [])
+
+    useEffect(() => {
+        if(themePreferenceSource === "saved")
+            return
+
+        if(typeof window === "undefined" || typeof window.matchMedia !== "function")
+            return
+
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
+
+        const handleChange = (event) => {
+            if(themePreferenceSource === "saved")
+                return
+
+            const nextTheme = getThemeById(event.matches ? "dark" : "light") || defaultTheme
+            applyTheme(nextTheme, false, "system")
+        }
+
+        if(mediaQuery.addEventListener)
+            mediaQuery.addEventListener("change", handleChange)
+        else if(mediaQuery.addListener)
+            mediaQuery.addListener(handleChange)
+
+        return () => {
+            if(mediaQuery.removeEventListener)
+                mediaQuery.removeEventListener("change", handleChange)
+            else if(mediaQuery.removeListener)
+                mediaQuery.removeListener(handleChange)
+        }
+    }, [themePreferenceSource, selectedThemeId, allThemes])
+
+    const getSelectedTheme = () => {
+        return getThemeById(selectedThemeId)
+    }
+
+    const setSelectedTheme = (theme) => {
+        applyTheme(theme, true, "saved")
     }
 
     const getAvailableThemes = (excludeSelected) => {

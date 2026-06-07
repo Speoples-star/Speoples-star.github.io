@@ -3,7 +3,9 @@
 div.preloader-window {
     position: fixed;
     z-index: $z-index-loader;
-    background-color: $loader-background;
+    background:
+        radial-gradient(circle at top, rgba(37, 99, 235, 0.16), transparent 34%),
+        linear-gradient(180deg, #111827 0%, #0F172A 100%);
     color: $loader-contrast;
 
     width: 100vw;
@@ -29,6 +31,7 @@ div.preloader-window-content {
     flex-direction: column;
     pointer-events: none;
     user-select: none;
+    gap: 2px;
 }
 
 div.preloader-window-info {
@@ -46,9 +49,11 @@ div.preloader-window-info-title {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 14px;
 }
 
 div.preloader-window-info-developer {
     opacity: 0.78;
     text-align: center;
+    letter-spacing: 0.01em;
 }

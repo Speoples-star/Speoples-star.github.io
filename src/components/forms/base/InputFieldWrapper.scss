@@ -1,15 +1,25 @@
 @import "/src/styles/extend.scss";
 
 div.input-field-wrapper {
-    border: 2px solid var(--form-border-color);
-    border-radius: $standard-border-radius;
+    --field-surface: var(--theme-card-background);
+    --field-border-color: var(--theme-primary);
+    --field-icon-background: color-mix(in srgb, var(--theme-primary) 10%, var(--field-surface));
+    --field-icon-border: color-mix(in srgb, var(--theme-primary) 18%, transparent);
+    --field-focus-shadow: color-mix(in srgb, var(--theme-primary) 24%, transparent);
+
+    display: flex;
+    align-items: stretch;
+    min-height: 64px;
+    border: 2px solid var(--field-border-color);
+    border-radius: 18px;
     overflow: hidden;
-    background-color: var(--theme-empty);
+    background-color: var(--field-surface);
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
 }
 
 div.input-field-wrapper-focused {
-    border: 2px solid var(--form-focus-border-color);
-    background-color: var(--form-focus-attach-background-color);
+    border-color: var(--theme-primary);
+    box-shadow: 0 0 0 4px var(--field-focus-shadow);
 }
 
 span.input-field-wrapper-attach {
@@ -17,19 +27,20 @@ span.input-field-wrapper-attach {
     align-items: center;
     justify-content: center;
 
-    min-width: 65px;
-    font-size: 1.1rem;
+    min-width: 62px;
+    padding: 0 16px;
+    font-size: 1.05rem;
     @include media-breakpoint-down(sm) {
-        min-width: 55px;
+        min-width: 56px;
         font-size: 0.95rem;
     }
 
-    background-color: var(--form-attach-background-color);
-    color: var(--form-attach-color);
-    border: none;
+    background-color: var(--field-icon-background);
+    color: var(--theme-primary);
+    border-right: 1px solid var(--field-icon-border);
 }
 
 span.input-field-wrapper-attach-focused {
-    background-color: var(--form-focus-attach-background-color);
-    color: var(--form-focus-attach-color);
+    background-color: color-mix(in srgb, var(--theme-primary) 16%, var(--field-surface));
+    color: var(--theme-primary);
 }

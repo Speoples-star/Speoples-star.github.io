@@ -1,5 +1,163 @@
 @import "/src/styles/extend.scss";
 
+article.article-contact-form {
+    --contact-section-bg-light: #F3F4F6;
+    --contact-section-bg-dark: #111827;
+    --contact-card-bg-light: #FFFFFF;
+    --contact-card-bg-dark: #1E293B;
+    --contact-border-color: #2563EB;
+    --contact-border-soft: color-mix(in srgb, var(--contact-border-color) 16%, transparent);
+    --contact-border-soft-2: color-mix(in srgb, var(--contact-border-color) 24%, transparent);
+    --contact-text-dark: #111827;
+    --contact-text-light: #E5E7EB;
+    --contact-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+    --contact-shadow-dark: 0 28px 64px rgba(0, 0, 0, 0.34);
+    --contact-input-surface-light: #FFFFFF;
+    --contact-input-surface-dark: #0F172A;
+    --contact-button-shadow: 0 16px 30px rgba(37, 99, 235, 0.22);
+    --contact-button-shadow-hover: 0 18px 36px rgba(37, 99, 235, 0.28);
+}
+
+html[data-theme="light"] article.article-contact-form {
+    background-color: var(--contact-section-bg-light);
+}
+
+html[data-theme="dark"] article.article-contact-form,
+:root:not([data-theme="light"]) article.article-contact-form {
+    background-color: var(--contact-section-bg-dark);
+}
+
+article.article-contact-form div.article-content {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+article.article-contact-form form#contact-form {
+    width: min(100%, 1120px);
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid var(--contact-border-soft);
+    box-shadow: var(--contact-shadow);
+    background-color: var(--contact-card-bg-light);
+}
+
+html[data-theme="dark"] article.article-contact-form form#contact-form,
+:root:not([data-theme="light"]) article.article-contact-form form#contact-form {
+    background-color: var(--contact-card-bg-dark);
+    box-shadow: var(--contact-shadow-dark);
+    border-color: color-mix(in srgb, var(--contact-border-color) 22%, transparent);
+}
+
+article.article-contact-form .row-form {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+article.article-contact-form .row-form-group {
+    margin-bottom: 16px;
+}
+
+article.article-contact-form .row-form-group-item {
+    margin-bottom: 0;
+}
+
+article.article-contact-form .row-form-submit {
+    margin-top: 24px;
+}
+
+article.article-contact-form .row-form-alert .alert {
+    border: 0;
+    border-radius: 18px;
+}
+
+article.article-contact-form .input-field-wrapper,
+article.article-contact-form .input-field-wrapper-focused {
+    --field-surface: var(--contact-input-surface-light);
+}
+
+html[data-theme="dark"] article.article-contact-form .input-field-wrapper,
+html[data-theme="dark"] article.article-contact-form .input-field-wrapper-focused,
+:root:not([data-theme="light"]) article.article-contact-form .input-field-wrapper,
+:root:not([data-theme="light"]) article.article-contact-form .input-field-wrapper-focused {
+    --field-surface: var(--contact-input-surface-dark);
+}
+
+article.article-contact-form .input-field-wrapper-focused {
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--contact-border-color) 24%, transparent);
+}
+
+article.article-contact-form input.form-input,
+article.article-contact-form textarea.form-textarea {
+    color: var(--theme-texts);
+}
+
+article.article-contact-form input.form-input::placeholder,
+article.article-contact-form textarea.form-textarea::placeholder {
+    color: var(--theme-opacity-border-accent);
+}
+
+article.article-contact-form input.form-input:focus-visible,
+article.article-contact-form textarea.form-textarea:focus-visible,
+article.article-contact-form button:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--contact-border-color) 34%, white);
+    outline-offset: 2px;
+}
+
+article.article-contact-form button.standard-button.btn-primary {
+    border: 2px solid var(--contact-border-color)!important;
+    box-shadow: var(--contact-button-shadow);
+}
+
+article.article-contact-form button.standard-button.btn-primary:hover {
+    background-color: color-mix(in srgb, var(--theme-primary) 86%, black)!important;
+    border-color: color-mix(in srgb, var(--contact-border-color) 90%, white)!important;
+    box-shadow: var(--contact-button-shadow-hover);
+}
+
+article.article-contact-form button.standard-button.btn-primary:focus-visible {
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--contact-border-color) 30%, transparent), var(--contact-button-shadow);
+}
+
+article.article-contact-form button.article-contact-form-reset-button {
+    margin-top: 28px;
+}
+
+article.article-contact-form .message-card {
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid var(--contact-border-soft);
+    background-color: var(--contact-card-bg-light)!important;
+    box-shadow: var(--contact-shadow);
+}
+
+html[data-theme="dark"] article.article-contact-form .message-card,
+:root:not([data-theme="light"]) article.article-contact-form .message-card {
+    background-color: var(--contact-card-bg-dark)!important;
+    border-color: color-mix(in srgb, var(--contact-border-color) 18%, transparent);
+    box-shadow: var(--contact-shadow-dark);
+}
+
+article.article-contact-form .message-card-avatar {
+    background-color: color-mix(in srgb, var(--contact-border-color) 12%, var(--contact-card-bg-light));
+    color: var(--contact-border-color);
+    border: 1px solid var(--contact-border-soft);
+}
+
+html[data-theme="dark"] article.article-contact-form .message-card-avatar,
+:root:not([data-theme="light"]) article.article-contact-form .message-card-avatar {
+    background-color: color-mix(in srgb, var(--contact-border-color) 12%, var(--contact-card-bg-dark));
+}
+
+article.article-contact-form .message-card h5,
+article.article-contact-form .message-card p {
+    color: var(--theme-texts);
+}
+
+article.article-contact-form .message-card p.message-card-footer {
+    color: var(--theme-texts-light-2);
+}
+
 button.article-contact-form-reset-button {
     margin-top: 28px;
 }

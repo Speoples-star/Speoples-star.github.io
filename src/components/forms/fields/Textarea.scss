@@ -17,14 +17,15 @@ textarea.form-textarea, textarea.form-textarea:focus {
     min-height: var(--min-height);
     padding: var(--padding);
 
-    background-color: var(--form-background-color);
+    background-color: transparent;
     color: var(--form-color);
     border: none;
     transition: none;
     box-shadow: none;
+    outline: none;
 }
 
 textarea.form-textarea-focused {
-    background-color: var(--form-focus-background-color)!important;
+    background-color: transparent!important;
     color: var(--form-focus-color)!important;
 }

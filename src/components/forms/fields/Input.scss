@@ -19,12 +19,14 @@ input.form-input {
 
     min-height: var(--height);
     padding: var(--padding);
+    border-radius: 0;
+    border: none;
+    outline: none;
 }
 
 input.form-input, input.form-input:focus {
-    background-color: var(--form-background-color);
+    background-color: transparent;
     color: var(--form-color);
-    border: none;
     transition: none;
     box-shadow: none;
 
@@ -39,11 +41,11 @@ input.form-input, input.form-input:focus {
     }
 
     &:-webkit-autofill:focus {
-        border-color: var(--form-focus-border-color);
+        border-color: var(--theme-primary);
     }
 }
 
 input.form-input-focused {
-    background-color: var(--form-focus-background-color)!important;
+    background-color: transparent!important;
     color: var(--form-focus-color)!important;
 }
