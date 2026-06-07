@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
     <img src="docs/assets/logo-large.png" width="120">
 </p>
