@@ -53,60 +53,48 @@
                 {
                     "id": 2,
                     "img": null,
-                    "faIcon": "fa-solid fa-briefcase",
+                    "faIcon": "fa-solid fa-shield-halved",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "title": "25+",
-                            "text": "Audits delivered"
+                            "title": "5+",
+                            "text": "Years supporting compliance and control activities"
                         }
                     }
                 },
                 {
                     "id": 3,
                     "img": null,
-                    "faIcon": "fa-solid fa-book-open",
+                    "faIcon": "fa-solid fa-certificate",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "title": "8",
-                            "text": "Compliance frameworks supported"
+                            "title": "2",
+                            "text": "Professional security credentials: CISA and Security+"
                         }
                     }
                 },
                 {
                     "id": 4,
                     "img": null,
-                    "faIcon": "fa-solid fa-shield-check",
+                    "faIcon": "fa-solid fa-lock",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "title": "4",
-                            "text": "Security credentials maintained"
+                            "title": "Active",
+                            "text": "Secret Clearance"
                         }
                     }
                 },
                 {
                     "id": 5,
                     "img": null,
-                    "faIcon": "fa-solid fa-building-columns",
+                    "faIcon": "fa-solid fa-person-military-pointing",
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "title": "3",
-                            "text": "Industries supported"
-                        }
-                    }
-                },
-                {
-                    "id": 6,
-                    "img": null,
-                    "faIcon": "fa-solid fa-gauge-high",
-                    "faIconColors": {"bg": "", "fill": ""},
-                    "locales": {
-                        "en": {
-                            "title": "100%",
-                            "text": "Audit readiness verified"
+                            "title": "Army National Guard",
+                            "text": "Leadership experience"
                         }
                     }
                 }
