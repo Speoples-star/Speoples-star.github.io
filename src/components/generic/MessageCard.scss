@@ -37,8 +37,8 @@ div.message-card {
         height: var(--avatar-size);
         font-size: calc(var(--avatar-size) / 2.3);
         border-radius: 100%;
-        background-color: var(--theme-primary);
-        color: var(--theme-texts-inv);
+        background-color: var(--theme-icon-primary);
+        color: var(--theme-icon-on-accent);
         margin-bottom: 20px;
     }
 

@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @date 2025-05-10
  * @description This component is a custom hook that provides a way to schedule and manage timeouts and intervals.
  */

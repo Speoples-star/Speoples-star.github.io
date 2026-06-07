@@ -99,7 +99,8 @@ function ArticleCardsItem({ itemWrapper }) {
                      dangerouslySetInnerHTML={{__html: itemWrapper.locales.text}}/>
 
                 {itemWrapper.dateStart && (
-                    <DateBadge dateEnd={itemWrapper.dateStartDisplay}
+                    <DateBadge dateStart={itemWrapper.dateStartDisplay}
+                               dateEnd={itemWrapper.dateEndDisplay}
                                variant={DateBadge.Variants.TRANSPARENT}
                                className={`article-cards-item-content-date-badge ${dateBadgeClass}`}/>
                 )}

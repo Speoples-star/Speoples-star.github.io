@@ -9,8 +9,8 @@ div.btn-option-picker {
 
 button.btn-option-picker-toggle {
     i.fa-icon {
-        opacity: 0.3;
-        color: var(--theme-texts);
+        opacity: 0.72;
+        color: var(--theme-icon-secondary);
     }
 
     img, i.fa-icon {
@@ -24,7 +24,7 @@ button.btn-option-picker-toggle {
 
     i.fa-caret-icon {
         opacity: 0.7;
-        color: var(--theme-texts);
+        color: var(--theme-icon-secondary);
         margin-left: 8px;
         margin-bottom: 2px;
         pointer-events: none;
@@ -34,7 +34,7 @@ button.btn-option-picker-toggle {
 button.btn-option-picker-toggle:hover {
     i.fa-icon {
         opacity: 1;
-        color: var(--theme-primary);
+        color: var(--theme-icon-primary);
     }
 
     img, i.fa-icon {
@@ -49,7 +49,7 @@ button.btn-option-picker-toggle:hover {
 
 a.btn-option-picker-menu-item {
     i.fa-icon {
-        opacity: 0.4;
+        opacity: 0.72;
     }
 
     span {

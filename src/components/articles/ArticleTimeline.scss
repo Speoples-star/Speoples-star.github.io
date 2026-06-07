@@ -74,10 +74,34 @@ div.article-timeline-item-avatar {
         border-radius: 100%;
     }
 
+    &:has(img.image-view-img) {
+        min-width: min(100%, calc(var(--avatar-size) * 2.35));
+        width: min(100%, calc(var(--avatar-size) * 2.35));
+        height: auto;
+        aspect-ratio: 2.65 / 1.05;
+        border-radius: 18px;
+        background-color: var(--theme-background-contrast);
+
+        div.avatar-view-image-view {
+            border-radius: 18px;
+            padding: 12px;
+            background-color: var(--theme-background-contrast);
+        }
+
+        img.image-view-img {
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
     @include media-breakpoint-down($timeline-merge-mode-breakpoint) {
         position: relative;
         top: calc(-1 * var(--avatar-offset-merge-mode));
         left: calc(-0.7 * var(--avatar-offset-merge-mode));
+
+        &:has(img.image-view-img) {
+            width: min(100%, calc(var(--avatar-size) * 2.1));
+        }
     }
 }
 

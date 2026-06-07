@@ -12,7 +12,7 @@ button.copy-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--theme-texts-light-4);
+    color: var(--theme-icon-muted);
     outline: none;
 
     i {
@@ -20,7 +20,7 @@ button.copy-button {
     }
 
     &:hover {
-        color: var(--theme-texts-light-1);
+        color: var(--theme-icon-primary);
     }
 }
 

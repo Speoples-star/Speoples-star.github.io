@@ -33,7 +33,7 @@ button.category-filter-button {
 
 button.category-filter-button:hover, button.category-filter-button:focus {
     background-color: var(--theme-links-hover);
-    color: var(--theme-texts-inv);
+    color: var(--theme-primary-contrast);
 }
 
 button.category-filter-no-hover-effects {
@@ -43,7 +43,7 @@ button.category-filter-no-hover-effects {
 
 button.category-filter-button:active, button.category-filter-button-selected {
     background-color: var(--theme-primary)!important;
-    color: var(--theme-texts-inv)!important;
+    color: var(--theme-primary-contrast)!important;
 }
 
 button.category-filter-button-selected {

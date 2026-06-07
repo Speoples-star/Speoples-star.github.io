@@ -38,9 +38,10 @@ a.nav-tab-controller-link {
     color: var(--theme-mobile-nav);
 
     i {
-        opacity: 0.5;
+        opacity: 0.72;
         font-size: 1rem;
         margin-top: 2px;
+        color: var(--theme-icon-secondary);
     }
 
     span {
@@ -55,6 +56,7 @@ a.nav-tab-controller-link:hover {
     color: var(--theme-mobile-nav-hover);
 
     i {
+        color: var(--theme-icon-primary);
         opacity: 1;
     }
 
@@ -68,7 +70,7 @@ a.nav-tab-controller-link-active {
     border-top-color: var(--theme-mobile-nav-selected-border);
 
     i {
-        color: var(--theme-mobile-nav-selected)!important;
+        color: var(--theme-icon-on-accent)!important;
         opacity: 1;
     }
 

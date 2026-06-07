@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @description This file contains global flags and layout variables.
  */
 
@@ -19,7 +19,7 @@
     --form-focus-color: var(--theme-links);
     --form-focus-border-color: var(--theme-primary-1);
     --form-focus-attach-background-color: var(--theme-primary);
-    --form-focus-attach-color: var(--theme-texts-inv);
+    --form-focus-attach-color: var(--theme-primary-contrast);
 }
 
 @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {

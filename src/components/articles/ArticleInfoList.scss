@@ -50,8 +50,8 @@ div.article-info-list-item {
     &-avatar {
         min-width: calc(var(--avatar-size) * 1.2);
         font-size: calc(var(--avatar-size) / 2)!important;
-        background-color: var(--theme-dark)!important;
-        color: var(--theme-texts)!important;
+        background-color: var(--theme-icon-tile-background)!important;
+        color: var(--theme-icon-tile-color)!important;
         border-radius: $standard-border-radius 0 0 $standard-border-radius;
     }
 
@@ -78,8 +78,8 @@ div.article-info-list-item {
 /** ------------- HOVER ------------------- **/
 div.article-info-list-item-hovered {
     div.article-info-list-item-avatar {
-        background-color: var(--theme-primary)!important;
-        color: var(--theme-texts-inv)!important;
+        background-color: var(--theme-icon-primary)!important;
+        color: var(--theme-icon-on-accent)!important;
         transition: 0.2s background-color ease-out, 0.2s background-color ease-out;
     }
 }

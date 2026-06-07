@@ -86,8 +86,15 @@ function ArticleItemInfoForTimelinesHeader({ itemWrapper, className = "", dateIn
     return (
         <div className={`article-timeline-item-info-for-timelines-header ${className}`}>
             <div className={`article-timeline-item-info-for-timelines-header-title`}>
-                <h5 className={``}
-                    dangerouslySetInnerHTML={{__html: itemWrapper.locales.title || itemWrapper.placeholder}}/>
+                <div className={`article-timeline-item-info-for-timelines-header-title-text`}>
+                    <h5 className={``}
+                        dangerouslySetInnerHTML={{__html: itemWrapper.locales.title || itemWrapper.placeholder}}/>
+
+                    {itemWrapper.locales.subtitle && (
+                        <div className={`article-timeline-item-info-for-timelines-header-subtitle text-2`}
+                             dangerouslySetInnerHTML={{__html: itemWrapper.locales.subtitle}}/>
+                    )}
+                </div>
 
                 {shouldShowDateBadge && (
                     <DateBadge dateStart={itemWrapper.dateStartDisplay}

@@ -22,8 +22,12 @@ div.nav-profile-card {
         width: var(--avatar-size);
         height: var(--avatar-size);
         border: var(--border-size) solid var(--theme-card-background-accent);
-        border-radius: calc($standard-border-radius * 2);
-        border-top-right-radius: 0;
+        border-radius: 50%;
+
+        img.image-view-img {
+            object-fit: cover;
+            object-position: center;
+        }
     }
 
     &-status-circle {
@@ -84,7 +88,7 @@ div.nav-profile-card-shrink {
     --offset-status-circle: 12px;
 
     div.nav-profile-card-avatar {
-        border-radius: calc($standard-border-radius * 2)!important;
+        border-radius: 50%!important;
     }
 
     div.nav-profile-card-info {

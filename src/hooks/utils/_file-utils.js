@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @date 2025-05-10
  */
 
@@ -48,7 +48,8 @@ export const _fileUtils = {
         if(path.startsWith("http")) return path
 
         const baseUrl = _fileUtils.BASE_URL || ""
-        const fullPath = baseUrl + path
+        const normalizedPath = path.startsWith("/") ? path : `/${path}`
+        const fullPath = baseUrl + normalizedPath
         return fullPath.replace(/(^|[^:])\/\//g, "$1/")
     },
 }

@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @description Mixin to build theme color scheme variables.
  */
 
@@ -42,6 +42,7 @@ $theme-contrast-steps: (1%, 2%, 3%, 4%, 5%, 6%, 7%, 8%, 9%, 10%, 12.5%, 15%, 17.
     $theme-scrollbar-thumb
 ) {
     --theme-primary: #{$theme-primary};
+    --theme-primary-contrast: #FFFFFF;
     --theme-secondary: #{$theme-secondary};
     --theme-dark: #{$theme-dark};
     --theme-danger: #{$theme-danger};
@@ -80,6 +81,13 @@ $theme-contrast-steps: (1%, 2%, 3%, 4%, 5%, 6%, 7%, 8%, 9%, 10%, 12.5%, 15%, 17.
         --theme-links: #{lighten($theme-primary, 5%)};
         --theme-links-hover: #{lighten($theme-primary, 10%)};
 
+        --theme-icon-primary: #{$theme-primary};
+        --theme-icon-secondary: #FFFFFF;
+        --theme-icon-muted: #{$theme-secondary};
+        --theme-icon-on-accent: #FFFFFF;
+        --theme-icon-tile-background: var(--theme-dark);
+        --theme-icon-tile-color: var(--theme-icon-secondary);
+
         --theme-card-background-accent: #{lighten($theme-card-background, 2%)};
         --theme-boards-background-accent: #{darken($theme-boards-background, 2%)};
         --theme-boards-background-accent-inv: #{lighten($theme-boards-background, 1%)};
@@ -96,10 +104,23 @@ $theme-contrast-steps: (1%, 2%, 3%, 4%, 5%, 6%, 7%, 8%, 9%, 10%, 12.5%, 15%, 17.
         --theme-opacity-border-light: #{rgba($theme-secondary, 0.05)};
         --theme-opacity-border-accent: #{rgba($theme-secondary, 0.35)};
         --theme-invert-filter: 1;
+
+        --theme-tag-background: var(--theme-primary);
+        --theme-tag-background-hover: var(--theme-links-hover);
+        --theme-tag-text: var(--theme-primary-contrast);
+        --theme-tag-dark-background: var(--theme-dark);
+        --theme-tag-dark-text: var(--theme-texts);
     }
     @else {
         --theme-links: #{darken($theme-primary, 5%)};
         --theme-links-hover: #{darken($theme-primary, 10%)};
+
+        --theme-icon-primary: #1D4ED8;
+        --theme-icon-secondary: #374151;
+        --theme-icon-muted: #4B5563;
+        --theme-icon-on-accent: #FFFFFF;
+        --theme-icon-tile-background: #DBEAFE;
+        --theme-icon-tile-color: var(--theme-icon-primary);
 
         --theme-card-background-accent: #{darken($theme-card-background, 2%)};
         --theme-boards-background-accent: #{darken($theme-boards-background, 2%)};
@@ -115,8 +136,14 @@ $theme-contrast-steps: (1%, 2%, 3%, 4%, 5%, 6%, 7%, 8%, 9%, 10%, 12.5%, 15%, 17.
 
         --theme-opacity-border: #{rgba(black, 0.15)};
         --theme-opacity-border-light: #{rgba(black, 0.05)};
-        --theme-opacity-border-accent: #{rgba(black, 0.3)};
+        --theme-opacity-border-accent: #{rgba($theme-secondary, 0.78)};
         --theme-invert-filter: 0;
+
+        --theme-tag-background: #DBEAFE;
+        --theme-tag-background-hover: #BFDBFE;
+        --theme-tag-text: #111827;
+        --theme-tag-dark-background: #E5E7EB;
+        --theme-tag-dark-text: #111827;
     }
 
     @for $i from 1 through 16 {

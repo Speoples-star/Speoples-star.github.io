@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @date 2025-05-10
  * @description This provider is responsible for managing the application's language settings and translations.
  */
@@ -114,7 +114,7 @@ function LanguageProvider({ children, supportedLanguages, defaultLanguageId, app
     }
 
     const getDateLocaleString = (date) => {
-        if(!date) return `date.null`
+        if(!date) return `<strong>${getString("present")}</strong>`
         if(utils.date.isSameDay(date)) return `<strong>${getString("present")}</strong>`
 
         const localeString = date.toLocaleString(

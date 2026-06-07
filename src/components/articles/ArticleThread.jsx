@@ -85,7 +85,7 @@ function ArticleThreadTrailingItem({ hasMore }) {
     return (
         <div className={`article-thread-item article-thread-item-trailing`}>
             <div className={`article-thread-item-circle`}>
-                <i className={hasMore ? `fa-solid fa-ellipsis opacity-50` : ``}/>
+                <i className={hasMore ? `fa-solid fa-ellipsis opacity-75` : ``}/>
             </div>
         </div>
     )

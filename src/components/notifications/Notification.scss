@@ -10,7 +10,7 @@ div.notification {
     @include media-breakpoint-down(sm) { width: 250px; min-height: 110px; }
 
     background-color: var(--theme-primary);
-    color: var(--theme-texts-inv);
+    color: var(--theme-primary-contrast);
 
     border-radius: $standard-border-radius;
     transition: 0.2s transform ease-in;

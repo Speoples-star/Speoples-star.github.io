@@ -16,15 +16,15 @@ li.prop-list-item {
 
     i.fa-icon {
         text-align: center;
-        color: var(--theme-texts);
+        color: var(--theme-icon-secondary);
         opacity: 0.9;
     }
 
     i.prop-list-separator, span.prop-list-separator {
-        color: var(--theme-texts);
+        color: var(--theme-icon-muted);
         font-size: 10px;
         user-select: none;
-        opacity: 0.6;
+        opacity: 0.72;
     }
 }
 
@@ -39,7 +39,7 @@ ul.prop-list-inline {
             &:after {
                 content: "·";
                 margin-left: 10px;
-                opacity: 0.5;
+                opacity: 0.72;
             }
         }
     }

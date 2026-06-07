@@ -18,38 +18,38 @@ button.circular-button {
 /** Variants **/
 button.circular-button-variant-default {
     background-color: var(--theme-boards-background-accent);
-    color: var(--theme-texts);
+    color: var(--theme-icon-secondary);
     border: 2px solid var(--theme-standard-borders-accent);
 
     &:hover {
         background-color: var(--theme-links);
-        color: var(--theme-texts-inv);
+        color: var(--theme-icon-on-accent);
         border-color: var(--theme-links);
     }
 }
 
 button.circular-button-variant-blend {
     background-color: var(--theme-card-background);
-    color: var(--theme-texts);
+    color: var(--theme-icon-secondary);
     border: 2px solid var(--theme-standard-borders);
 
     i {
-        opacity: 0.3;
+        opacity: 0.72;
     }
 
     &:hover {
         background-color: var(--theme-card-background);
-        color: var(--theme-texts);
+        color: var(--theme-icon-secondary);
     }
 }
 
 button.circular-button-variant-transparent {
     background-color: transparent;
-    color: var(--theme-texts);
+    color: var(--theme-icon-secondary);
     border: 2px solid var(--theme-standard-borders-accent);
 
     i {
-        opacity: 0.5;
+        opacity: 0.72;
     }
 
     &:hover {

@@ -105,7 +105,7 @@ function ModalWrapperTitle({ title, faIcon, onClose, tooltip }) {
 
             {onClose && (
                 <CircularButton onClick={onClose}
-                                faIcon={`fa-solid fa-xmark`}
+                                faIcon={`fa-solid fa-xStefan`}
                                 size={CircularButton.Sizes.LARGE}
                                 variant={CircularButton.Variants.DEFAULT}
                                 tooltip={tooltip || language.getString("close_window")}/>

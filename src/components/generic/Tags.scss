@@ -10,16 +10,20 @@ ul.tags {
 
 li.tag {
     display: inline-flex;
-    background-color: var(--theme-primary);
-    color: var(--theme-texts-inv);
+    background-color: var(--theme-tag-background);
+    color: var(--theme-tag-text);
     border-radius: 5px;
+    border: 1px solid color-mix(in srgb, currentColor 12%, transparent);
     text-transform: lowercase;
+    font-weight: 600;
     white-space: nowrap;
     user-select: none;
     transition: 0.2s background-color ease-out;
+    line-height: 1.2;
 
     &:hover {
-        background-color: var(--theme-links-hover);
+        background-color: var(--theme-tag-background-hover);
+        color: var(--theme-tag-text);
     }
 
     margin-right: 6px;
@@ -34,14 +38,16 @@ li.tag {
 }
 
 li.tag-dark {
-    background-color: var(--theme-dark);
-    color: var(--theme-texts);
+    background-color: var(--theme-tag-dark-background);
+    color: var(--theme-tag-dark-text);
     margin-right: 3px;
     margin-bottom: 3px;
+    border-color: color-mix(in srgb, currentColor 10%, transparent);
 
 
     &:hover {
-        background-color: var(--theme-background-darken-1);
+        background-color: var(--theme-tag-background-hover);
+        color: var(--theme-tag-text);
     }
 }
 

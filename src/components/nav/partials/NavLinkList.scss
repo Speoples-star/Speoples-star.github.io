@@ -25,8 +25,9 @@ a.nav-link {
     i {
         font-size: 1.15rem;
         min-width: 60px;
-        opacity: 0.3;
+        opacity: 0.72;
         text-align: center;
+        color: var(--theme-icon-secondary);
         transition: 0.2s scale ease-in-out;
     }
 
@@ -39,7 +40,7 @@ a.nav-link:hover {
     background-color: var(--theme-card-background-accent);
 
     i {
-        color: var(--theme-primary);
+        color: var(--theme-icon-primary);
         opacity: 0.9;
         scale: 1.1;
     }
@@ -57,13 +58,13 @@ a.nav-link-active {
     pointer-events: none;
 
     i {
-        color: var(--theme-texts-inv)!important;
+        color: var(--theme-icon-on-accent)!important;
         opacity: 0.9;
         scale: 1.1!important;
     }
 
     span {
-        color: var(--theme-texts-inv)!important;
+        color: var(--theme-primary-contrast)!important;
         opacity: 1;
     }
 }

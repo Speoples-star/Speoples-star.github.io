@@ -28,12 +28,13 @@ a.nav-link-pills-link {
     i {
         margin-right: 9px;
         font-size: 1.1rem;
-        opacity: 0.3;
+        opacity: 0.72;
+        color: var(--theme-icon-secondary);
     }
 
     span {
         font-size: 0.95rem;
-        opacity: 0.6;
+        opacity: 0.78;
     }
 
     @include media-breakpoint-down(sm) {
@@ -47,6 +48,7 @@ a.nav-link-pills-link:hover {
     color: var(--theme-mobile-nav-hover);
 
     i {
+        color: var(--theme-icon-primary);
         opacity: 1;
     }
 
@@ -62,7 +64,7 @@ a.nav-link-pills-link-active {
     pointer-events: none;
 
     i {
-        color: var(--theme-mobile-nav-selected)!important;
+        color: var(--theme-icon-on-accent)!important;
         opacity: 1;
     }
 

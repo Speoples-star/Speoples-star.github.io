@@ -1,7 +1,7 @@
 {
-    "name": "Mark Choi",
+    "name": "Stefan Peoples",
 
-    "profilePictureUrl": "images/pictures/profile-picture.jpg",
+    "profilePictureUrl": "images/pictures/stefan-army.png",
     "resumePdfUrl": "",
 
     "statusCircleVisible": true,
@@ -10,48 +10,48 @@
 
     "locales": {
         "en": {
-            "localized_name": "Mark Choi",
-            "localized_name_stylized": " [[Mark {{Choi}}]]",
-            "status_message_available_for_freelance": "Available for freelance!",
+            "localized_name": "Stefan Peoples",
+            "localized_name_stylized": "[[Stefan ]]{{Peoples}}",
+            "status_message_available_for_freelance": "Available for IT Audit, GRC, and Cyber Compliance roles.",
             "roles": [
-                "Backend Developer",
-                "Frontend Developer",
-                "DevOps Engineer",
-                "UX Designer"
+                "CISA Certified | Security+ CE | Active Secret Clearance",
+                "IT Audit • GRC • Cyber Compliance",
+                "Risk Management • Compliance Operations • Audit Readiness"
             ],
-            "name_pronunciation_ipa": "/mark chwe/",
+            "name_pronunciation_ipa": "Steh-FAHN PEE-puls",
             "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
         },
         "es": {
-            "status_message_available_for_freelance": "¡Disponible para freelance!",
+            "status_message_available_for_freelance": "¡Disponible para consultoría!",
             "roles": [
-                "Desarrollador Backend",
-                "Desarrollador Frontend",
-                "Ingeniero DevOps",
-                "Diseñador UX"
-            ]
+                "CISA Certified IT Audit Professional",
+                "Cyber Compliance Specialist",
+                "Risk Management • Compliance Operations • Audit Readiness"
+            ],
+            "name_pronunciation_ipa": "Steh-FAHN PEE-puls",
+            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
         },
         "fr": {
-            "status_message_available_for_freelance": "Disponible pour freelance !",
+            "status_message_available_for_freelance": "Disponible pour consultation !",
             "roles": [
-                "Développeur Backend",
-                "Développeur Frontend",
-                "Ingénieur DevOps",
-                "Designer UX"
-            ]
+                "CISA Certified IT Audit Professional",
+                "Cyber Compliance Specialist",
+                "Risk Management • Compliance Operations • Audit Readiness"
+            ],
+            "name_pronunciation_ipa": "Steh-FAHN PEE-puls",
+            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
         },
         "ko": {
             "localized_name": "최민석",
             "localized_name_stylized": "{{최}}민석",
-            "status_message_available_for_freelance": "프리랜스 가능합니다!",
+            "status_message_available_for_freelance": "컨설팅 가능합니다!",
             "roles": [
-                "백엔드 개발자",
-                "프론트엔드 개발자",
-                "데브옵스 엔지니어",
-                "UX 디자이너"
+                "CISA Certified IT Audit Professional",
+                "Cyber Compliance Specialist",
+                "Risk Management • Compliance Operations • Audit Readiness"
             ],
-            "name_pronunciation_ipa": "/chwe min-seok/",
-            "name_pronunciation_audio_url": "audio/korean-name-pronunciation.mp3"
+            "name_pronunciation_ipa": "Steh-FAHN PEE-puls",
+            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
         }
     }
 }

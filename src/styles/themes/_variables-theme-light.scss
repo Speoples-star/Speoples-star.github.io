@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @description Light theme colors.
  *
  * What each color represents:
@@ -33,31 +33,31 @@
 
 @import "theme-variables-builder";
 
-$primary: #269366;
-$secondary: darken(#798287, 10%);
-$dark: #d1ead6;
-$danger: #932626;
-$muted: #7c8d7f;
+$primary: #2563EB;
+$secondary: #4B5563;
+$dark: #2b2b2b;
+$danger: #C1121F;
+$muted: #6B7280;
 
-$base-bg: #91d7aa;
-$base-bg-light: #a6e3b8;
-$base-bg-dark: #7ecb94;
+$base-bg: #FFFFFF;
+$base-bg-light: #ffffff;
+$base-bg-dark: #F3F4F6;
 
-$texts: #202521;
-$texts-inverted: #EEE;
+$texts: #111827;
+$texts-inverted: #FFFFFF;
 
-$base-container-bg: #f5faf6;
-$base-container-bg-accent: #c2e9d0;
-$base-popover-bg: #cae1d4;
-$base-boards: lighten(#e6f6ea, 1%);
-$base-info-badges: lighten(#d2e8d8, 3%);
-$empty: #ffffff;
+$base-container-bg: #ffffff;
+$base-container-bg-accent: #F3F4F6;
+$base-popover-bg: #ffffff;
+$base-boards: #F9FAFB;
+$base-info-badges: #EEF2FF;
+$empty: #F9FAFB;
 
-$borders: #eaf6eb;
-$borders-nav-mobile: rgba(white, 0.15);
-$borders-nav-mobile-accent: rgba(white, 0.6);
-$scrollbar-track: #daf5e1;
-$scrollbar-thumb: #55bd91;
+$borders: #D1D5DB;
+$borders-nav-mobile: rgba(#111827, 0.15);
+$borders-nav-mobile-accent: rgba(#111827, 0.35);
+$scrollbar-track: #F3F4F6;
+$scrollbar-thumb: #2563EB;
 
 [data-theme="light"] {
     @include build-theme(

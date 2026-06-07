@@ -4,13 +4,26 @@ $column-breakpoint: xl;
 
 div.article-text-items {
     --row-gap: 20px;
-    --avatar-size: 285px;
+    --avatar-width: 460px;
+    --avatar-height: 250px;
     --spacing: 35px;
-    @include media-breakpoint-down(xxl) {--avatar-size: 270px}
-    @include media-breakpoint-down(xl) {--avatar-size: 200px}
-    @include media-breakpoint-down(lg) {--avatar-size: 180px}
-    @include media-breakpoint-down(md) {--avatar-size: 150px}
-    @include media-breakpoint-down(sm) {--avatar-size: 130px}
+    @include media-breakpoint-down(xxl) {
+        --avatar-width: 430px;
+        --avatar-height: 235px;
+    }
+    @include media-breakpoint-down(xl) {
+        --avatar-width: min(100%, 680px);
+        --avatar-height: 220px;
+    }
+    @include media-breakpoint-down(lg) {
+        --avatar-height: 200px;
+    }
+    @include media-breakpoint-down(md) {
+        --avatar-height: 180px;
+    }
+    @include media-breakpoint-down(sm) {
+        --avatar-height: 150px;
+    }
 
     display: flex;
     flex-direction: column;
@@ -41,16 +54,18 @@ div.article-text-avatar-view-wrapper {
     align-items: center;
     justify-content: center;
 
-    min-width: var(--avatar-size);
-    min-height: calc(var(--avatar-size)/1.2);
-    width: var(--avatar-size);
-    height: calc(var(--avatar-size)/1.2);
+    min-width: var(--avatar-width);
+    min-height: var(--avatar-height);
+    width: var(--avatar-width);
+    height: var(--avatar-height);
 
     margin-left: calc(var(--spacing)/4);
     margin-right: var(--spacing);
     @include media-breakpoint-down($column-breakpoint) {
         margin-left: 5px;
         margin-right: 0;
+        width: 100%;
+        min-width: 0;
     }
 }
 
@@ -58,9 +73,14 @@ div.article-text-avatar-view {
     height: 100%;
     width: 100%;
     background-color: transparent;
-    font-size: calc(var(--avatar-size) / 1.75);
+    font-size: calc(var(--avatar-height) / 1.4);
     @include media-breakpoint-down($column-breakpoint) {
         margin-bottom: calc(var(--spacing)/2);
+    }
+
+    img.image-view-img {
+        object-fit: cover;
+        object-position: center;
     }
 }
 

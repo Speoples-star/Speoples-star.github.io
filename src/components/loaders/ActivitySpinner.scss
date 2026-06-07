@@ -25,12 +25,12 @@
     height: var(--dimensions);
     font-size: calc(var(--dimensions)/1.25);
 
-    opacity: 0.75;
-    color: white;
+    opacity: 1;
+    color: var(--theme-icon-primary);
     margin-bottom: 20px;
 }
 
 div.activity-spinner-message {
-    color: #BBB;
+    color: var(--theme-icon-muted);
     padding: 0 30px;
 }

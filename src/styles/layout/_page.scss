@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @description App general layout styles.
  */
 
@@ -28,12 +28,12 @@ body.body-android {
 
 /** ------------ SELECTION STYLES ------------ **/
 ::-moz-selection {
-    color: var(--theme-texts-inv);
+    color: var(--theme-primary-contrast);
     background: var(--theme-primary);
 }
 
 ::selection {
-    color: var(--theme-texts-inv);
+    color: var(--theme-primary-contrast);
     background: var(--theme-primary);
 }
 

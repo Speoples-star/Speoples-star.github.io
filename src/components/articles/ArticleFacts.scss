@@ -37,8 +37,8 @@ div.article-facts-item-avatar {
     border-radius: 100%;
     font-size: calc(var(--avatar-size)/2.4)!important;
 
-    background-color: var(--theme-texts);
-    color: var(--theme-texts-inv);
+    background-color: var(--theme-icon-primary);
+    color: var(--theme-icon-on-accent);
 }
 
 div.article-facts-item-info {

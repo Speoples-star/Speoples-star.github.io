@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @description Dark theme colors.
  *
  * What each color represents:
@@ -31,29 +31,29 @@
 
 @import "theme-variables-builder";
 
-$primary: #9dff8e;
-$secondary: #a4afb5;
-$dark: #161616;
-$danger: #fdd2d2;
-$muted: #6c757d;
+$primary: #2563EB;
+$secondary: #B3B3B3;
+$dark: #121212;
+$danger: #C1121F;
+$muted: #8f8f8f;
 
-$base-bg: #0c0c0c;
-$base-bg-light: #181818;
-$base-bg-dark: #090909;
+$base-bg: #0B0B0B;
+$base-bg-light: #141414;
+$base-bg-dark: #070707;
 
-$texts: #EEEEEE;
+$texts: #FFFFFF;
 $texts-inverted: #111111;
 
-$base-container-bg: #191919;
-$base-popover-bg: #0e0e0e;
+$base-container-bg: #161616;
+$base-popover-bg: #111111;
 $base-boards: lighten($base-container-bg, 3%);
-$base-info-badges: lighten($dark, 3%);
-$empty: darken($base-container-bg, 3%);
-$empty-accent: #131313;
+$base-info-badges: #222222;
+$empty: #121212;
+$empty-accent: #1a1a1a;
 
-$borders: #1D1D1D;
-$scrollbar-track: #101010;
-$scrollbar-thumb: #32343a;
+$borders: #222222;
+$scrollbar-track: #111111;
+$scrollbar-thumb: #2563EB;
 
 :root {
     @include build-theme(

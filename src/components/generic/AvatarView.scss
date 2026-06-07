@@ -6,8 +6,8 @@ div.avatar-view {
     justify-content: center;
     overflow: hidden;
 
-    background-color: var(--theme-dark);
-    color: var(--theme-texts);
+    background-color: var(--theme-icon-tile-background);
+    color: var(--theme-icon-tile-color);
     font-size: 32px;
 
     &-image-view {

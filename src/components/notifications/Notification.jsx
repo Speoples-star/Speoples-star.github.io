@@ -53,7 +53,7 @@ function Notification({ id, type, title, message, onDismiss }) {
 
                 <button className={`notification-close-button btn btn-link-default-inv text-4`}
                         onClick={onDismiss}>
-                    <i className={`fa-icon-no-select fa-solid fa-xmark`}/>
+                    <i className={`fa-icon-no-select fa-solid fa-xStefan`}/>
                 </button>
             </div>
 

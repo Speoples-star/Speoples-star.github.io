@@ -52,23 +52,37 @@ function AudioButton({ url = "", tooltip = "", size = "", buttonClassName = "", 
         setStatus(AudioButton.Status.LOADING)
         const resolvedPath = utils.file.resolvePath(url)
         audioRef.current = new Audio(resolvedPath)
-        audioRef.current.addEventListener("loadeddata", () => {
-            _playAudio()
-        })
+        audioRef.current.preload = "auto"
+        audioRef.current.autoplay = true
         audioRef.current.addEventListener("ended", () => {
             _stopAudio()
         })
         audioRef.current.addEventListener("error", () => {
-            _reset()
+            const audioError = audioRef.current?.error
             utils.log.warn("AudioButton", "Couldn't load audio from URL: " + resolvedPath)
+            if(audioError) {
+                utils.log.warn("AudioButton", `Audio error code ${audioError.code}: ${audioError.message}`)
+            }
+            _reset()
         })
+        audioRef.current.play()
+            .then(() => {
+                setStatus(AudioButton.Status.PLAYING)
+            })
+            .catch(error => {
+                utils.log.warn("AudioButton", "Audio playback failed: " + error?.message)
+                setStatus(AudioButton.Status.COMPLETED)
+            })
     }
 
     const _playAudio = () => {
         if(!audioRef.current) return
         setStatus(AudioButton.Status.PLAYING)
         audioRef.current.currentTime = 0
-        audioRef.current?.play()
+        audioRef.current.play().catch(error => {
+            utils.log.warn("AudioButton", "Audio playback failed: " + error?.message)
+            setStatus(AudioButton.Status.COMPLETED)
+        })
     }
 
     const _stopAudio = () => {

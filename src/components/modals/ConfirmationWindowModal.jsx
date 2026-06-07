@@ -22,7 +22,7 @@ function ConfirmationWindowModal({ target, onDismiss }) {
     const modalDialogClass = viewport.isDesktopLayout() ? `` : `modal-dialog-centered`
 
     const title = target.title || ""
-    const faIcon = target.faIcon || "fa-solid fa-question-mark"
+    const faIcon = target.faIcon || "fa-solid fa-question-Stefan"
     const message = target.message
     const cancelLabel = target.cancelLabel || language.getString("no")
     const confirmLabel = target.confirmLabel || language.getString("yes")
@@ -61,7 +61,7 @@ function ConfirmationWindowModal({ target, onDismiss }) {
                     <StandardButton label={cancelLabel}
                                     tooltip={cancelLabel}
                                     variant={`contrast`}
-                                    faIcon={`fa-solid fa-xmark`}
+                                    faIcon={`fa-solid fa-xStefan`}
                                     onClick={_onCancel}/>
 
                     <StandardButton label={confirmLabel}

@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @description This file contains the customization of Bootstrap styles.
  */
 
@@ -19,7 +19,7 @@ div.accordion {
 
         &:hover {
             background-color: var(--theme-dark);
-            color: var(--theme-primary);
+            color: var(--theme-icon-primary);
             opacity: 1;
         }
 
@@ -35,14 +35,14 @@ div.accordion {
 
     button.accordion-button:not(.collapsed) {
         background-color: var(--theme-primary);
-        color: var(--theme-texts-inv);
+        color: var(--theme-primary-contrast);
         outline: none;
         box-shadow: none;
         opacity: 1;
         pointer-events: none;
 
         i {
-            color: var(--theme-secondary-emphasis);
+            color: var(--theme-icon-on-accent);
         }
 
         &:after {
@@ -62,7 +62,7 @@ div.alert {
     &-danger {
         background-color: var(--theme-danger);
         border: 0;
-        color: var(--theme-texts-inv);
+        color: #FFFFFF;
     }
 }
 
@@ -81,10 +81,11 @@ button.btn {
 
     &-primary {
         background-color: var(--theme-primary)!important;
-        color: var(--theme-texts-inv)!important;
+        color: var(--theme-primary-contrast)!important;
 
         &:hover {
             background-color: var(--theme-links-hover)!important;
+            color: var(--theme-primary-contrast)!important;
         }
     }
 
@@ -131,7 +132,7 @@ button.btn {
     &-disabled {
         user-select: none;
         pointer-events: none;
-        opacity: 0.5;
+        opacity: 0.7;
     }
 
     &-selected {
@@ -210,9 +211,10 @@ div.dropdown {
 
         &:hover, &:focus {
             background-color: var(--theme-primary);
-            color: var(--theme-texts-inv);
+            color: var(--theme-primary-contrast);
             i.fa-icon {
-                opacity: 0.8;
+                color: var(--theme-icon-on-accent);
+                opacity: 1;
             }
         }
     }

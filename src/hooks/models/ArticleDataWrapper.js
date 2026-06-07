@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @date 2025-05-10
  * @description This class is a wrapper for the article data. It provides methods to parse and validate the data loaded from a section's JSON file.
  */

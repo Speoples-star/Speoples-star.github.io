@@ -1,6 +1,6 @@
 import "./Preloader.scss"
 import React, {useEffect, useState} from 'react'
-import PacMan from "/src/components/widgets/PacMan.jsx"
+import ComplianceLoader from "/src/components/widgets/ComplianceLoader.jsx"
 import Logo from "/src/components/widgets/Logo.jsx"
 import {useScheduler} from "/src/hooks/scheduler.js"
 import {useUtils} from "/src/hooks/utils.js"
@@ -158,7 +158,7 @@ function PreloaderWindow({ title, subtitle, logoOffset, setDidLoadAllImages, sho
 
     const [didLoadLogo, setDidLoadLogo] = useState(false)
 
-    const [isPacManHidden, setIsPacManHidden] = useState(true)
+    const [isComplianceLoaderHidden, setIsComplianceLoaderHidden] = useState(true)
 
     const hiddenClass = isHiding ?
         `preloader-window-hidden` : ``
@@ -170,21 +170,21 @@ function PreloaderWindow({ title, subtitle, logoOffset, setDidLoadAllImages, sho
 
     useEffect(() => {
         if(!showElements) {
-            setIsPacManHidden(true)
+            setIsComplianceLoaderHidden(true)
             return
         }
 
-        scheduler.clearAllWithTag("preloader-pacman")
+        scheduler.clearAllWithTag("preloader-compliance-loader")
         scheduler.schedule(() => {
-            setIsPacManHidden(false)
-        }, 100, "preloader-pacman")
+            setIsComplianceLoaderHidden(false)
+        }, 100, "preloader-compliance-loader")
     }, [showElements])
 
     return (
         <div className={`preloader-window ${hiddenClass}`}>
             <div className={`preloader-window-content`}>
-                <PacMan variant={PacMan.ColorVariants.LOADER}
-                        hidden={isPacManHidden}/>
+                <ComplianceLoader color={ComplianceLoader.ColorVariants.LOADER}
+                                  hidden={isComplianceLoaderHidden}/>
 
                 <PreloaderWindowInfo title={title}
                                      subtitle={subtitle}

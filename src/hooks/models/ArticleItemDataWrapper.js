@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @date 2025-05-10
  * @description This class is a wrapper for the article item data. It provides methods to parse and validate the data loaded from an article's list.
  */
@@ -115,6 +115,7 @@ export default class ArticleItemDataWrapper {
 
         const translations = {
             title: language.getTranslation(locales, "title", null),
+            subtitle: language.getTranslation(locales, "subtitle", null),
             country: language.getTranslation(locales, "country", null),
             institution: language.getTranslation(locales, "institution", null),
             level: language.getTranslation(locales, "level", null),

@@ -44,12 +44,24 @@ div.article-timeline-item-info-for-timelines-header-title {
     width: 100%;
     position: relative;
 
-    h5 {
-        font-weight: bold;
-        margin-bottom: 10px;
+    div.article-timeline-item-info-for-timelines-header-title-text {
         max-width: calc(100% - var(--date-badge-width)*1.15);
         @include media-breakpoint-down(xl) {
             max-width: 100%;
+        }
+    }
+
+    h5 {
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+
+    div.article-timeline-item-info-for-timelines-header-subtitle {
+        color: var(--theme-texts-light);
+        font-weight: 600;
+        margin-bottom: 10px;
+
+        @include media-breakpoint-down(xl) {
             margin-bottom: 15px;
         }
     }

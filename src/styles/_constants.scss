@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Stefan Peoples
  * @description Global presets for the template.
  */
 
@@ -7,7 +7,7 @@
 @import "themes/variables-theme-light";
 
 /** Overriding Bootstrap's contrast ratio. **/
-$min-contrast-ratio: 1.5 !default;
+$min-contrast-ratio: 4.5 !default;
 
 /** Typography **/
 $font-family-base: 'Saira', sans-serif;
@@ -16,7 +16,7 @@ $headings-font-family: 'Orbitron', sans-serif;
 /** Static Colors **/
 $loader-background: #111111;
 $loader-contrast: #FFFFFF;
-$primary: #36ad59;
+$primary: #2563EB;
 
 /** Z-Indexing **/
 $z-index-background: -1;

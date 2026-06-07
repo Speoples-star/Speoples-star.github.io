@@ -40,7 +40,7 @@ Just copy and paste this into a section's `articles` array and see the magic hap
                     "province": "Ontario",
                     "country": "Canada",
                     "institution": "Tech Company",
-                    "text": "Promoted to Senior Software Engineer at my current company! Excited for the new challenges and responsibilities ahead."
+                    "text": "Promoted to Senior IT Audit • GRC • Cyber Compliance at my current company! Excited for the new challenges and responsibilities ahead."
                 }
             }
         }
