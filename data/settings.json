@@ -1,0 +1,101 @@
+{
+    "developerSettings": {
+        "debugMode": false,
+        "fakeEmailRequests": false,
+        "stayOnThePreloaderScreen": false,
+        "version": "2.0.3"
+    },
+
+    "preloaderSettings": {
+        "enabled": true,
+        "title": "Validating Security Controls...",
+        "subtitle": "Preparing Audit Evidence",
+        "logoOffset": {
+            "right": 14,
+            "top": 2,
+            "bottom": 0
+        }
+    },
+
+    "templateSettings": {
+        "animatedCursorEnabled": true,
+        "backgroundStyle": "animated",
+        "defaultLanguageId": "en",
+        "defaultThemeId": "dark",
+        "fullscreenEnabled": true,
+        "showSpinnerOnThemeChange": false
+    },
+
+    "supportedLanguages": [
+        {
+            "name": "English",
+            "id": "en",
+            "flagUrl": "images/flags/en-us.png"
+        },
+        {
+            "name": "Espanol",
+            "id": "es",
+            "flagUrl": "images/flags/es.png"
+        },
+        {
+            "name": "Francais",
+            "id": "fr",
+            "flagUrl": "images/flags/fr.png"
+        },
+        {
+            "name": "Korean",
+            "id": "ko",
+            "flagUrl": "images/flags/ko.png"
+        }
+    ],
+
+    "supportedThemes": [
+        {
+            "id": "dark",
+            "icon": "fa-solid fa-moon",
+            "dark": true,
+            "locales": {
+                "en": {"name": "Dark Mode"},
+                "es": {"name": "Dark Mode"},
+                "fr": {"name": "Dark Mode"},
+                "ko": {"name": "Dark Mode"}
+            }
+        },
+        {
+            "id": "light",
+            "icon": "fa-solid fa-sun",
+            "dark": false,
+            "locales": {
+                "en": {"name": "Light Mode"},
+                "es": {"name": "Light Mode"},
+                "fr": {"name": "Light Mode"},
+                "ko": {"name": "Light Mode"}
+            }
+        }
+    ],
+
+    "consoleMessageForDevelopers": {
+        "title": "Stefan Peoples Portfolio",
+        "items": [
+            {
+                "description": "IT Audit, GRC, Cyber Compliance, and DoD-focused portfolio.",
+                "list": [],
+                "listStyle": "none"
+            },
+            {
+                "description": "Core frameworks and plugins used in the project include:",
+                "list": [
+                    "Bootstrap 5: https://getbootstrap.com/",
+                    "Smooth Scrollbar: https://tinyurl.com/4yhm4n4a",
+                    "Swiper: https://swiperjs.com/",
+                    "EmailJS: https://www.emailjs.com/",
+                    "Font Awesome: https://fontawesome.com/",
+                    "PrimeIcons: https://primefaces.org/"
+                ],
+                "listStyle": "bulleted"
+            }
+        ]
+    },
+
+    "imagesToCache": []
+}

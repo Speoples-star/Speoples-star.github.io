@@ -1,0 +1,185 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Achievements",
+                "title_short_nav": "Achievements",
+                "title_long_prefix": "Here are my",
+                "title_long": "Career {{Highlights}}"
+            },
+            "es": {
+                "title_short": "Achievements",
+                "title_short_nav": "Achievements",
+                "title_long_prefix": "Here are my",
+                "title_long": "Career {{Highlights}}"
+            },
+            "fr": {
+                "title_short": "Achievements",
+                "title_short_nav": "Achievements",
+                "title_long_prefix": "Here are my",
+                "title_long": "Career {{Highlights}}"
+            },
+            "ko": {
+                "title_short": "Achievements",
+                "title_short_nav": "Achievements",
+                "title_long_prefix": "Here are my",
+                "title_long": "Career {{Highlights}}"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleCards",
+            "locales": {
+                "en": {"title": "Certifications & Credentials"}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-shield-halved",
+                    "faIconColors": {"bg": "var(--theme-icon-primary)", "fill": "var(--theme-icon-on-accent)"},
+                    "dateStart": {"year": 2026, "month": 3},
+                    "link": {"href": "https://www.isaca.org/credentialing/cisa", "tooltipString": "see_certification"},
+                    "locales": {
+                        "en": {
+                            "title": "Certified Information Systems Auditor (CISA)",
+                            "text": "Issuing Organization: ISACA<br>Issued: March 2026"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-key",
+                    "faIconColors": {"bg": "var(--theme-icon-primary)", "fill": "var(--theme-icon-on-accent)"},
+                    "dateStart": {"year": 2024, "month": 3},
+                    "dateEnd": {"year": 2027, "month": 3},
+                    "link": {"href": "https://www.comptia.org/certifications/security", "tooltipString": "see_certification"},
+                    "locales": {
+                        "en": {
+                            "title": "CompTIA Security+ CE",
+                            "text": "Issuing Organization: CompTIA<br>Issued: March 2024<br>Expires: March 2027"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-user-secret",
+                    "faIconColors": {"bg": "var(--theme-icon-primary)", "fill": "var(--theme-icon-on-accent)"},
+                    "dateStart": {"year": 2015, "month": 2},
+                    "link": {"href": "", "tooltipString": "see_certification"},
+                    "locales": {
+                        "en": {
+                            "title": "Active Secret Clearance",
+                            "text": "Issuing Organization: Virginia Army National Guard<br>Active Since: February 2015"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": {"title": "Professional Impact"}
+            },
+            "settings": {
+                "max_rows_collapse_threshold": 4,
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "date": {"year": 2024, "month": 6},
+                    "preview": {"links": [], "screenshots": [], "screenshotsAspectRatio": "", "youtubeVideo": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Army National Guard IT Support",
+                            "province": "Virginia",
+                            "country": "US",
+                            "institution": "Army National Guard",
+                            "text": "Maintained mission-critical IT operations with disciplined compliance, access management, and DoD-aligned system hardening."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "date": {"year": 2024, "month": 2},
+                    "preview": {"links": [], "screenshots": [], "screenshotsAspectRatio": "", "youtubeVideo": ""},
+                    "locales": {
+                        "en": {
+                            "title": "500+ AESMP Tickets Closed",
+                            "province": "Richmond",
+                            "country": "US",
+                            "institution": "Federal Services",
+                            "text": "Resolved over 500 endpoint security, compliance, and access remediation tickets within AESMP to maintain mission uptime and compliance posture."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "date": {"year": 2023, "month": 11},
+                    "preview": {"links": [], "screenshots": [], "screenshotsAspectRatio": "", "youtubeVideo": ""},
+                    "locales": {
+                        "en": {
+                            "title": "2,000+ Users Supported",
+                            "province": "Remote",
+                            "country": "US",
+                            "institution": "Compliance Operations",
+                            "text": "Delivered secure access and compliance support for more than 2,000 internal and DoD-affiliated users."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "date": {"year": 2023, "month": 9},
+                    "preview": {"links": [], "screenshots": [], "screenshotsAspectRatio": "", "youtubeVideo": ""},
+                    "locales": {
+                        "en": {
+                            "title": "100% On-Time Completion",
+                            "province": "US",
+                            "country": "US",
+                            "institution": "Audit Delivery",
+                            "text": "Completed audit deliverables and remediation tracking on schedule without customer complaints."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "component": "ArticleCards",
+            "locales": {
+                "en": {"title": "Leadership & Organizations"}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "images/pictures/kappa-alpha-psi-logo.png",
+                    "faIcon": "fa-solid fa-people-group",
+                    "faIconColors": {"bg": "var(--theme-icon-primary)", "fill": "var(--theme-icon-on-accent)"},
+                    "dateStart": {"year": 2017, "month": 4},
+                    "dateEnd": {"now": true},
+                    "locales": {
+                        "en": {
+                            "title": "Kappa Alpha Psi Fraternity, Incorporated",
+                            "text": "Position: Chapter Strategus (Security)<br>Chapter: Eta Omega Chapter (Old Dominion University)<br><br>Responsible for supporting chapter security, risk awareness, event coordination, and organizational accountability initiatives while contributing to the chapter's mission of achievement in every field of human endeavor."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

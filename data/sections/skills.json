@@ -1,0 +1,193 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Skills",
+                "title_short_nav": "Skills",
+                "title_long_prefix": "Explore",
+                "title_long": "My {{Skill Set}}"
+            },
+            "es": {
+                "title_short": "Habilidades",
+                "title_short_nav": "Habilidades",
+                "title_long_prefix": "Explora",
+                "title_long": "Mis {{Habilidades}}"
+            },
+            "fr": {
+                "title_short": "Compétences",
+                "title_short_nav": "Compétences",
+                "title_long_prefix": "Découvrez",
+                "title_long": "Mes {{Compétences}}"
+            },
+            "ko": {
+                "title_short": "기술",
+                "title_short_nav": "기술",
+                "title_long_prefix": "이것은 내",
+                "title_long": "{{기술}} 세트"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleCards",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-balance-scale",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Risk Assessment",
+                            "text": "Evaluating IT control effectiveness, prioritizing vulnerabilities, and quantifying business impact for remediation decisions."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-gavel",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Compliance Strategy",
+                            "text": "Aligning policies, standards, and evidence workflows with NIST, DoD, and federal cybersecurity requirements."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-clipboard-check",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Audit Operations",
+                            "text": "Managing audit schedules, control testing, findings tracking, and executive reporting for readiness engagements."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-shield-halved",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "date": {"year": null, "month": null},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "Cloud Security",
+                            "text": "Applying secure cloud and endpoint controls within Microsoft Intune, Microsoft 365, and mission-critical hybrid environments."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleSkills",
+            "locales": {
+                "en": {"title": "Core Frameworks & Tools"},
+                "es": {"title": "Marcos y Herramientas"},
+                "fr": {"title": "Cadres et Outils"},
+                "ko": {"title": "기본 프레임워크 및 도구"}
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "percentage",
+                "order_items_sort": "desc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-book",
+                    "faIconColors": {"bg": "", "fill": "var(--theme-icon-primary)"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 95,
+                    "locales": {
+                        "en": {
+                            "title": "NIST 800-53",
+                            "text": "Experienced in mapping controls, testing procedures, and audit documentation for federal compliance.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-shield-alt",
+                    "faIconColors": {"bg": "", "fill": "var(--theme-icon-primary)"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 92,
+                    "locales": {
+                        "en": {
+                            "title": "STIG Compliance",
+                            "text": "Validated technical STIG requirements and coordinated remediations for secure DoD system baselines.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-magnifying-glass-chart",
+                    "faIconColors": {"bg": "", "fill": "var(--theme-icon-primary)"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 90,
+                    "locales": {
+                        "en": {
+                            "title": "ACAS & Nessus",
+                            "text": "Managing vulnerability scanning programs and translating findings into compliance remediation actions.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-network-wired",
+                    "faIconColors": {"bg": "", "fill": "var(--theme-icon-primary)"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 88,
+                    "locales": {
+                        "en": {
+                            "title": "eMASS & Evidence Management",
+                            "text": "Collecting, tracking, and validating audit evidence in enterprise compliance systems.",
+                            "level": ""
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-brands fa-microsoft",
+                    "faIconColors": {"bg": "", "fill": "var(--theme-icon-primary)"},
+                    "date": {"year": null, "month": null},
+                    "percentage": 87,
+                    "locales": {
+                        "en": {
+                            "title": "Microsoft Intune / 365",
+                            "text": "Securing endpoint and cloud productivity platforms with policy configuration and compliance monitoring.",
+                            "level": ""
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

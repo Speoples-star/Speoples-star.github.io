@@ -1,0 +1,153 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Explore my",
+                "title_long": "{{Compliance}} Work"
+            },
+            "es": {
+                "title_short": "Portafolio",
+                "title_short_nav": "Portafolio",
+                "title_long_prefix": "Explora mi",
+                "title_long": "Trabajo de {{Cumplimiento}}"
+            },
+            "fr": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Découvrez mon",
+                "title_long": "Travail de {{Conformité}}"
+            },
+            "ko": {
+                "title_short": "포트폴리오",
+                "title_short_nav": "포트폴리오",
+                "title_long_prefix": "내",
+                "title_long": "{{규정 준수}} 작업"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "category_all": "All",
+                    "category_compliance": "Compliance Initiatives",
+                    "category_readiness": "Audit Readiness",
+                    "category_access": "Access Governance",
+                    "category_controls": "Control Programs"
+                },
+                "es": {
+                    "category_all": "Todo",
+                    "category_compliance": "Iniciativas de Cumplimiento",
+                    "category_readiness": "Preparación de Auditoría",
+                    "category_access": "Gobernanza de Acceso",
+                    "category_controls": "Programas de Control"
+                },
+                "fr": {
+                    "category_all": "Tout",
+                    "category_compliance": "Initiatives de Conformité",
+                    "category_readiness": "Préparation d'Audit",
+                    "category_access": "Gouvernance d'Accès",
+                    "category_controls": "Programmes de Contrôle"
+                },
+                "ko": {
+                    "category_all": "모두",
+                    "category_compliance": "규정 준수 이니셔티브",
+                    "category_readiness": "감사 준비",
+                    "category_access": "액세스 거버넌스",
+                    "category_controls": "통제 프로그램"
+                }
+            },
+            "settings": {
+                "categorize_by": ["category_compliance", "category_readiness", "category_access", "category_controls"],
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "categoryId": "category_compliance",
+                    "img": "",
+                    "faIcon": "fa-solid fa-shield-halved",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "STIG Compliance & Remediation",
+                            "text": "Delivered STIG validation and remediation for DoD endpoints and Microsoft 365 services, reducing deviations and improving audit readiness.",
+                            "tags": ["STIG", "eMASS", "Microsoft 365"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "categoryId": "category_readiness",
+                    "img": "",
+                    "faIcon": "fa-solid fa-file-shield",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "CCRI / CORA Readiness",
+                            "text": "Led readiness assessments and evidence collection for CCRI and CORA compliance, aligning risk controls with DoD requirements.",
+                            "tags": ["CCRI", "CORA", "DoD"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "categoryId": "category_access",
+                    "img": "",
+                    "faIcon": "fa-solid fa-user-shield",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Identity & Access Governance",
+                            "text": "Managed access control reviews and privileged account governance across Microsoft Intune and enterprise identity systems.",
+                            "tags": ["Identity", "Access", "Governance"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "categoryId": "category_controls",
+                    "img": "",
+                    "faIcon": "fa-solid fa-clipboard-list",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "IT Controls & Audit Readiness",
+                            "text": "Built control testing and audit evidence plans for NIST 800-53, enabling more transparent remediation and executive reporting.",
+                            "tags": ["Controls", "Audit", "NIST 800-53"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

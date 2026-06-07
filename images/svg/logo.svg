@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Compliance shield logo</title>
+  <desc id="desc">A blue shield with a checkmark representing audit readiness and security controls.</desc>
+  <defs>
+    <linearGradient id="shieldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="#0F172A"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="#2563EB" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M32 10l18 6v14c0 12.2-7.5 21.4-18 24-10.5-2.6-18-11.8-18-24V16l18-6z" fill="url(#shieldGlow)"/>
+  <path d="M32 18l11 4v8c0 7.7-4.4 13.8-11 16-6.6-2.2-11-8.3-11-16v-8l11-4z" fill="#0F172A" fill-opacity="0.18"/>
+  <path d="M25.2 32.3l4.6 4.8 9.4-10.2" fill="none" stroke="#F8FAFC" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 10l18 6v14c0 12.2-7.5 21.4-18 24-10.5-2.6-18-11.8-18-24V16l18-6z" fill="none" stroke="#BFDBFE" stroke-opacity="0.55" stroke-width="1.4"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#2563EB" stroke-opacity="0.14" stroke-width="2"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Liberty University logo">
+  <rect width="128" height="128" rx="24" fill="#0B0B0B"/>
+  <g transform="translate(24 18)">
+    <path d="M40 0C35.6 0 32 3.6 32 8v52c0 4.4 3.6 8 8 8h8v20h8V68h8c4.4 0 8-3.6 8-8V8c0-4.4-3.6-8-8-8H40Z" fill="#2563EB"/>
+    <path d="M32 24h24" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M32 40h24" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M32 56h24" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <text x="0" y="90" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Liberty</text>
+    <text x="0" y="108" fill="#B3B3B3" font-family="Arial, Helvetica, sans-serif" font-size="12">University</text>
+  </g>
+</svg>

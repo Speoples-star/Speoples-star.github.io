@@ -1,0 +1,196 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Life recently",
+                "title_short_nav": "Updates",
+                "title_long_prefix": "Take a look at my",
+                "title_long": "Recent {{Updates}}"
+            },
+            "es": {
+                "title_short": "Vida Reciente",
+                "title_short_nav": "Actualizaciones",
+                "title_long_prefix": "Consulta mis",
+                "title_long": "Actualizaciones {{Recientes}}"
+            },
+            "fr": {
+                "title_short": "Vie Récente",
+                "title_short_nav": "Mises à Jour",
+                "title_long_prefix": "Découvrez mes",
+                "title_long": "Dernières {{Mises à Jour}}"
+            },
+            "ko": {
+                "title_short": "최근의 삶",
+                "title_short_nav": "업데이트",
+                "title_long_prefix": "내 최근",
+                "title_long": "{{업데이트}}를 확인해 보세요"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleFacts",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": null,
+                    "faIcon": "fa-solid fa-clipboard-check",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "5+",
+                            "text": "Years of IT audit experience"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": null,
+                    "faIcon": "fa-solid fa-briefcase",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "25+",
+                            "text": "Audits delivered"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": null,
+                    "faIcon": "fa-solid fa-book-open",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "8",
+                            "text": "Compliance frameworks supported"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": null,
+                    "faIcon": "fa-solid fa-shield-check",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "4",
+                            "text": "Security credentials maintained"
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": null,
+                    "faIcon": "fa-solid fa-building-columns",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "3",
+                            "text": "Industries supported"
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": null,
+                    "faIcon": "fa-solid fa-gauge-high",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "100%",
+                            "text": "Audit readiness verified"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": {"title": "Quick {{Facts}}"},
+                "es": {"title": "Datos {{Rápidos}}"},
+                "fr": {"title": "Faits {{Rapides}}"},
+                "ko": {"title": "빠른 {{사실}}"}
+            },
+            "settings": {
+                "max_rows_collapse_threshold": 4,
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "date": {"year": 2024, "month": 6},
+                    "preview": {
+                        "links": [
+                            {"href": "https://www.dau.edu/", "tooltipString": "open_website", "faIcon": "fa-solid fa-file-contract"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Public Trust readiness confirmed",
+                            "province": "Richmond",
+                            "country": "US",
+                            "institution": "Federal Audit Services",
+                            "text": "Completed a comprehensive DoD audit readiness assessment and federal governance validation plan to support secure operations and high-assurance reporting."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "date": {"year": 2023, "month": 11},
+                    "preview": {
+                        "links": [
+                            {"href": "https://www.iso.org/iso-27001-information-security.html", "tooltipString": "open_website", "faIcon": "fa-solid fa-shield-check"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "SOC 2 and ISO 27001 readiness delivered",
+                            "province": "Remote",
+                            "country": "US",
+                            "institution": "Healthcare & Finance",
+                            "text": "Delivered two readiness programs that aligned control testing, policy, and evidence collection across security and privacy frameworks."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "date": {"year": 2024, "month": 3},
+                    "preview": {
+                        "links": [
+                            {"href": "https://www.nist.gov/", "tooltipString": "open_website", "faIcon": "fa-solid fa-lightbulb"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Continuous monitoring framework published",
+                            "province": "",
+                            "country": "",
+                            "institution": "Risk Governance Practice",
+                            "text": "Rolled out a continuous monitoring framework that improved control visibility and made compliance reporting more actionable for leadership."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

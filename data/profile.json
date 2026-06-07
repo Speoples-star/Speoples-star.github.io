@@ -1,0 +1,57 @@
+{
+    "name": "Stefan Peoples",
+
+    "profilePictureUrl": "images/pictures/stefan-army.png",
+    "resumePdfUrl": "",
+
+    "statusCircleVisible": true,
+    "statusCircleVariant": "available",
+    "statusCircleHoverMessage": "status_message_available_for_freelance",
+
+    "locales": {
+        "en": {
+            "localized_name": "Stefan Peoples",
+            "localized_name_stylized": "[[Stefan ]]{{Peoples}}",
+            "status_message_available_for_freelance": "Available for IT Audit, GRC, and Cyber Compliance roles.",
+            "roles": [
+                "CISA Certified | Security+ CE | Active Secret Clearance",
+                "IT Audit • GRC • Cyber Compliance",
+                "Risk Management • Compliance Operations • Audit Readiness"
+            ],
+            "name_pronunciation_ipa": "Steh-FAHN PEE-puls",
+            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
+        },
+        "es": {
+            "status_message_available_for_freelance": "¡Disponible para consultoría!",
+            "roles": [
+                "CISA Certified IT Audit Professional",
+                "Cyber Compliance Specialist",
+                "Risk Management • Compliance Operations • Audit Readiness"
+            ],
+            "name_pronunciation_ipa": "Steh-FAHN PEE-puls",
+            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
+        },
+        "fr": {
+            "status_message_available_for_freelance": "Disponible pour consultation !",
+            "roles": [
+                "CISA Certified IT Audit Professional",
+                "Cyber Compliance Specialist",
+                "Risk Management • Compliance Operations • Audit Readiness"
+            ],
+            "name_pronunciation_ipa": "Steh-FAHN PEE-puls",
+            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
+        },
+        "ko": {
+            "localized_name": "최민석",
+            "localized_name_stylized": "{{최}}민석",
+            "status_message_available_for_freelance": "컨설팅 가능합니다!",
+            "roles": [
+                "CISA Certified IT Audit Professional",
+                "Cyber Compliance Specialist",
+                "Risk Management • Compliance Operations • Audit Readiness"
+            ],
+            "name_pronunciation_ipa": "Steh-FAHN PEE-puls",
+            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
+        }
+    }
+}
