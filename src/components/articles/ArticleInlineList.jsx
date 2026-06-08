@@ -69,11 +69,18 @@ function ArticleInlineListItems({ dataWrapper, selectedItemCategoryId}) {
  * @constructor
  */
 function ArticleInlineListItem({ itemWrapper }) {
+    const iconVisible = Boolean(itemWrapper.link?.href && itemWrapper.faIconWithFallback)
+
     return (
         <li className={`article-inline-list-item text-4`}>
             <Link href={itemWrapper.link?.href || null}
                   tooltip={itemWrapper.link?.tooltip}
                   metadata={itemWrapper.link?.metadata}>
+                {iconVisible && (
+                    <i className={`article-inline-list-item-icon ${itemWrapper.faIconWithFallback}`}
+                       style={itemWrapper.faIconStyle}/>
+                )}
+
                 <span className={`article-inline-list-item-label`}
                       dangerouslySetInnerHTML={{__html: itemWrapper.locales.label || itemWrapper.label || itemWrapper.placeholder}}/>
             </Link>
