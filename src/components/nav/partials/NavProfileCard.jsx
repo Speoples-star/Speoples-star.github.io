@@ -8,7 +8,6 @@ import ImageView from "/src/components/generic/ImageView.jsx"
 import StatusCircle from "/src/components/generic/StatusCircle.jsx"
 import TextTyper from "/src/components/generic/TextTyper.jsx"
 import AudioButton from "/src/components/buttons/AudioButton.jsx"
-import Link from "/src/components/generic/Link.jsx"
 
 function NavProfileCard({ profile, expanded }) {
     const language = useLanguage()
@@ -50,7 +49,6 @@ function NavProfileCard({ profile, expanded }) {
     const navProfileCardNameClass = namePronunciationButtonVisible ?
         `nav-profile-card-name-with-audio-button` :
         ``
-    const socialLinks = Array.isArray(profile.socialLinks) ? profile.socialLinks : []
 
     const _onStatusBadgeClicked = () => {
         navigation.navigateToSectionWithId("contact")
@@ -89,24 +87,6 @@ function NavProfileCard({ profile, expanded }) {
                 {roles?.length === 1 && (
                     <div className={`nav-profile-card-role`}
                          dangerouslySetInnerHTML={{__html: roles[0]}}/>
-                )}
-
-                {socialLinks.length > 0 && (
-                    <div className={`nav-profile-card-social-links`}
-                         aria-label={`Social links`}>
-                        {socialLinks.map(socialLink => (
-                            <Link href={socialLink.href}
-                                  tooltip={language.getString(socialLink.tooltipString)}
-                                  className={`nav-profile-card-social-link`}
-                                  key={socialLink.id || socialLink.href}>
-                                <i className={socialLink.faIcon}
-                                   aria-hidden={true}/>
-                                <span className={`visually-hidden`}>
-                                    {socialLink.label}
-                                </span>
-                            </Link>
-                        ))}
-                    </div>
                 )}
             </div>
         </Card>

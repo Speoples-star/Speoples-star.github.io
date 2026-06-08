@@ -4,16 +4,6 @@
     "profilePictureUrl": "images/pictures/stefan-army.png",
     "resumePdfUrl": "",
 
-    "socialLinks": [
-        {
-            "id": "linkedin",
-            "label": "LinkedIn",
-            "href": "https://www.linkedin.com/in/stefan-peoples-cisa-983556130",
-            "faIcon": "fa-brands fa-linkedin",
-            "tooltipString": "open_website"
-        }
-    ],
-
     "statusCircleVisible": true,
     "statusCircleVariant": "available",
     "statusCircleHoverMessage": "status_message_available_for_freelance",

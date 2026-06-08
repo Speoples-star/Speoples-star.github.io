@@ -1,32 +1,35 @@
 @import "/src/styles/extend.scss";
 
 $spacing-between-items: 15px;
-$item-padding: 5px;
 
 ul.article-inline-list-items {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
     text-align: center;
+    white-space: nowrap;
 }
 
 li.article-inline-list-item {
-    margin-right: calc($spacing-between-items - 10px);
-    white-space: nowrap;
     display: inline-flex;
     align-items: baseline;
-    vertical-align: baseline;
     line-height: 1.2;
+    white-space: nowrap;
 
     @include media-breakpoint-down(sm) {
-        margin-right: calc($spacing-between-items - 12px);
+        font-size: 0.56rem!important;
     }
 
     a {
         display: inline-flex;
         align-items: baseline;
-        vertical-align: baseline;
         line-height: inherit;
+        white-space: nowrap;
     }
 
     span.article-inline-list-item-label {
@@ -36,60 +39,31 @@ li.article-inline-list-item {
     &:not(:last-child)::after {
         content: "\2022";
         color: var(--theme-muted);
-        margin-left: $spacing-between-items;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        align-self: center;
-        vertical-align: baseline;
-        height: 1em;
+        align-self: baseline;
+        min-width: 1em;
+        margin: 0 10px;
         line-height: 1;
-        width: 0.9em;
-        margin-top: 0;
-
-        @include media-breakpoint-down(md) {
-            width: 0.85em;
-        }
+        transform: translateY(-0.02em);
 
         @include media-breakpoint-down(sm) {
-            margin-left: calc($spacing-between-items - 5px);
+            margin: 0 3px;
         }
-    }
-}
-
-i.article-inline-list-item-icon {
-    padding: $item-padding $item-padding;
-    margin: 0 $item-padding;
-    border-radius: 100%;
-    opacity: 0.75;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 28px;
-    height: 28px;
-    @include media-breakpoint-down(sm) {
-        margin: 0 calc($item-padding - 3px)
     }
 }
 
 ul.article-inline-list-items-column-mode {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: baseline;
     justify-content: center;
+    flex-wrap: nowrap;
 
     li.article-inline-list-item {
-        margin-right: 0;
-        height: 25px;
-
         &:not(:last-child)::after {
-            display: none;
+            display: inline-flex;
         }
-    }
-
-    i.article-inline-list-item-icon {
-        margin-left: 0;
     }
 }

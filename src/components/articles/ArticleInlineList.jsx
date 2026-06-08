@@ -74,9 +74,6 @@ function ArticleInlineListItem({ itemWrapper }) {
             <Link href={itemWrapper.link?.href || null}
                   tooltip={itemWrapper.link?.tooltip}
                   metadata={itemWrapper.link?.metadata}>
-                <i className={`article-inline-list-item-icon ${itemWrapper.faIconWithFallback}`}
-                   style={itemWrapper.faIconStyle}/>
-
                 <span className={`article-inline-list-item-label`}
                       dangerouslySetInnerHTML={{__html: itemWrapper.locales.label || itemWrapper.label || itemWrapper.placeholder}}/>
             </Link>
