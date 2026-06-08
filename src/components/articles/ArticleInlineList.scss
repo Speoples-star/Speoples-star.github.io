@@ -20,7 +20,7 @@ li.article-inline-list-item {
     }
 
     &:not(:last-child)::after {
-        content: "𐄁";
+        content: "•";
         color: var(--theme-muted);
         margin-left: $spacing-between-items;
         margin-top: 4px;

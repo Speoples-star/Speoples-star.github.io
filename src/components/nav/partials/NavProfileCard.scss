@@ -75,9 +75,14 @@ div.nav-profile-card {
         color: var(--theme-secondary);
         font-size: 0.9rem;
         min-height: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: min(100%, 260px);
         @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
             font-size: 0.95rem;
             min-height: 25px;
+            max-width: min(100%, 220px);
         }
     }
 }
