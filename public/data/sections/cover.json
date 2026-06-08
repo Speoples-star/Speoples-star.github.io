@@ -54,8 +54,8 @@
                 },
                 {
                     "id": 2,
-                    "label": "Stefan.Peoples@gmail.com",
-                    "link": {"href": "mailto:Stefan.Peoples@gmail.com", "tooltipString": "email_me"},
+                    "label": "stefan.peoples@gmail.com",
+                    "link": {"href": "mailto:stefan.peoples@gmail.com", "tooltipString": "email_me"},
                     "faIcon": "fa-regular fa-envelope"
                 },
                 {

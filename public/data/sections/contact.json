@@ -83,8 +83,8 @@
                     "id": 2,
                     "faIcon": "fa-solid fa-envelope",
                     "faIconColors": {"bg": "", "fill": ""},
-                    "label": "Stefan.Peoples@gmail.com",
-                    "link": {"href": "mailto:Stefan.Peoples@gmail.com", "tooltipString": "email_me"},
+                    "label": "stefan.peoples@gmail.com",
+                    "link": {"href": "mailto:stefan.peoples@gmail.com", "tooltipString": "email_me"},
                     "copyToClipboardButton": true,
                     "locales": {
                         "en": {"title": "E-mail"},
