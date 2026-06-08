@@ -10,6 +10,7 @@ import {useUtils} from "/src/hooks/utils.js"
 
 const constants = useConstants()
 const utils = useUtils()
+const contactFormRecipientEmail = "stefan.peoples@gmail.com"
 
 export const useApi = () => {
     return {
@@ -46,6 +47,8 @@ const validators = {
                 from_name: name,
                 email: email,
                 from_email: email,
+                to_email: contactFormRecipientEmail,
+                recipient_email: contactFormRecipientEmail,
                 custom_subject: subject,
                 message: message,
                 custom_source: utils.url.getAbsoluteLocation(),
