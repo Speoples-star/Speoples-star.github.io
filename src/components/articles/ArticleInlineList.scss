@@ -14,9 +14,9 @@ li.article-inline-list-item {
     margin-right: calc($spacing-between-items - 10px);
     white-space: nowrap;
     display: inline-flex;
-    align-items: center;
-    vertical-align: middle;
-    line-height: 1;
+    align-items: baseline;
+    vertical-align: baseline;
+    line-height: 1.2;
 
     @include media-breakpoint-down(sm) {
         margin-right: calc($spacing-between-items - 12px);
@@ -24,19 +24,25 @@ li.article-inline-list-item {
 
     a {
         display: inline-flex;
-        align-items: center;
-        vertical-align: middle;
-        line-height: 1;
+        align-items: baseline;
+        vertical-align: baseline;
+        line-height: inherit;
+    }
+
+    span.article-inline-list-item-label {
+        line-height: inherit;
     }
 
     &:not(:last-child)::after {
-        content: "•";
+        content: "\2022";
         color: var(--theme-muted);
         margin-left: $spacing-between-items;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        vertical-align: middle;
+        align-self: center;
+        vertical-align: baseline;
+        height: 1em;
         line-height: 1;
         width: 0.9em;
         margin-top: 0;

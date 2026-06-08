@@ -63,6 +63,7 @@ export default class ArticleDataWrapper {
 
             // - ArticleInlineList
             displayAsListIfWidthIsLowerThan: rawSettings["display_as_list_if_width_is_lower_than"] || undefined,
+            maxItemsByBreakpoint: rawSettings["max_items_by_breakpoint"] || undefined,
 
             // - ArticleSkills
             maxItemsPerRow: rawSettings["max_items_per_row"] || undefined,

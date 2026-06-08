@@ -36,12 +36,19 @@
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "asc",
-                "display_as_list_if_width_is_lower_than": 380
+                "display_as_list_if_width_is_lower_than": 380,
+                "max_items_by_breakpoint": {
+                    "xxl": 3,
+                    "xl": 3,
+                    "md": 3,
+                    "sm": 3,
+                    "default": 3
+                }
             },
             "items": [
                 {
                     "id": 1,
-                    "label": "Richmond - VA",
+                    "label": "Richmond, VA",
                     "link": {"href": "", "tooltipString": ""},
                     "faIcon": "pi pi-map-Stefaner"
                 },
@@ -53,7 +60,7 @@
                 },
                 {
                     "id": 3,
-                    "label": "www.linkedin.com/in/stefan-peoples-cisa-983556130",
+                    "label": "LinkedIn",
                     "link": {"href": "https://www.linkedin.com/in/stefan-peoples-cisa-983556130", "tooltipString": "open_website"},
                     "faIcon": "fa-brands fa-linkedin"
                 }
