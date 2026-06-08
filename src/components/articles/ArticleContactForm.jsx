@@ -174,7 +174,7 @@ function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setSho
 
             {didSubmit && (
                 <ArticleContactFormSuccessMessage dataWrapper={dataWrapper}
-                                                  email={emailDisplay}
+                                                  email={emailDisplay || email}
                                                   onReset={_onReset}/>
             )}
 
