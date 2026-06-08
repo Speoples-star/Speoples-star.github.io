@@ -46,7 +46,7 @@
                     "locales": {
                         "en": {
                             "title": "5+",
-                            "text": "Years of IT audit experience"
+                            "text": "Years Experience"
                         }
                     }
                 },
@@ -58,7 +58,7 @@
                     "locales": {
                         "en": {
                             "title": "5+",
-                            "text": "Years supporting compliance and control activities"
+                            "text": "Compliance Framework Support"
                         }
                     }
                 },
@@ -70,7 +70,7 @@
                     "locales": {
                         "en": {
                             "title": "2",
-                            "text": "Professional security credentials: CISA and Security+"
+                            "text": "Security Credentials Maintained"
                         }
                     }
                 },
@@ -93,8 +93,20 @@
                     "faIconColors": {"bg": "", "fill": ""},
                     "locales": {
                         "en": {
-                            "title": "Army National Guard",
-                            "text": "Leadership experience"
+                            "title": "2",
+                            "text": "Industries Supported"
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "img": null,
+                    "faIcon": "fa-solid fa-gauge-high",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "100%",
+                            "text": "Audit readiness verified"
                         }
                     }
                 }
