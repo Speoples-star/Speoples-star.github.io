@@ -90,17 +90,18 @@ div.nav-profile-card {
         font-size: 0.9rem;
         min-height: 25px;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: min(100%, 260px);
+        overflow: visible;
+        text-overflow: clip;
+        width: auto;
+        max-width: none;
         @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
             align-items: center;
             justify-content: center;
             text-align: center;
             font-size: 0.95rem;
             min-height: 25px;
-            width: 100%;
-            max-width: min(100%, 220px);
+            width: auto;
+            max-width: none;
         }
 
         span.text-typer-span {
@@ -108,7 +109,7 @@ div.nav-profile-card {
             align-items: center;
             justify-content: center;
             text-align: center;
-            width: 100%;
+            width: auto;
         }
     }
 
